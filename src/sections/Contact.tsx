@@ -37,7 +37,7 @@ const socialLinks = [
     name: 'Email',
     username: 'benjamonti@protonmail.com',
     icon: Mail,
-    url: 'mailto:tu@email.com',
+    url: 'mailto:benjamonti@protonmail.com',
     color: 'from-violet-600 to-indigo-600', 
     bgColor: 'bg-gradient-to-br from-violet-50 to-indigo-50 dark:from-violet-950/30 dark:to-indigo-950/30',
     iconColor: 'text-violet-600 dark:text-violet-400',
