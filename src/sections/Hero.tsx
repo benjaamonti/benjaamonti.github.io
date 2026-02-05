@@ -21,7 +21,7 @@ export function Hero() {
           {/* Name and Title */}
           <div className="space-y-2">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-              <span className="gradient-text">Tu Nombre</span>
+              <span className="gradient-text">Benjamin Monti</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground font-medium">
               Desarrollador Web Full Stack
