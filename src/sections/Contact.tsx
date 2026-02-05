@@ -1,47 +1,53 @@
-import { Instagram, Linkedin, MessageCircle, Mail, Send } from 'lucide-react';
+import { Instagram, Linkedin, Github, Mail } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
 
 const socialLinks = [
   {
     id: 1,
     name: 'Instagram',
-    username: '@tu_usuario',
+    username: '@benjaa.monti',
     icon: Instagram,
-    url: 'https://instagram.com/tu_usuario',
+    url: 'https://instagram.com/benjaa.monti',
     color: 'from-purple-500 via-pink-500 to-orange-400',
     bgColor: 'bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30',
     iconColor: 'text-pink-600 dark:text-pink-400',
   },
   {
     id: 2,
-    name: 'WhatsApp',
-    username: '+34 123 456 789',
-    icon: MessageCircle,
-    url: 'https://wa.me/34123456789',
-    color: 'from-green-500 to-emerald-600',
-    bgColor: 'bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30',
-    iconColor: 'text-green-600 dark:text-green-400',
+    name: 'GitHub',
+    username: 'benjaa-monti',
+    icon: Github,
+    url: 'https://github.com/benjaa-monti',
+    color: 'from-slate-700 to-slate-900',
+    bgColor: 'bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900/30 dark:to-slate-800/30',
+    iconColor: 'text-slate-700 dark:text-slate-400',
   },
   {
     id: 3,
     name: 'LinkedIn',
-    username: '/in/tu-perfil',
+    username: 'benja-monti',
     icon: Linkedin,
-    url: 'https://linkedin.com/in/tu-perfil',
+    url: 'https://linkedin.com/in/benja-monti-177848220',
     color: 'from-blue-600 to-blue-700',
     bgColor: 'bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30',
     iconColor: 'text-blue-600 dark:text-blue-400',
+  },
+  {
+    id: 4,
+    name: 'Email',
+    username: 'benjamonti@protonmail.com',
+    icon: Mail,
+    url: 'mailto:tu@email.com',
+    color: 'from-violet-600 to-indigo-600', 
+    bgColor: 'bg-gradient-to-br from-violet-50 to-indigo-50 dark:from-violet-950/30 dark:to-indigo-950/30',
+    iconColor: 'text-violet-600 dark:text-violet-400',
   },
 ];
 
 export function Contact() {
   return (
     <section id="contacto" className="py-16 px-4 bg-muted/50">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             <span className="gradient-text">Contacto</span>
@@ -52,8 +58,8 @@ export function Contact() {
           </p>
         </div>
         
-        {/* Social Cards */}
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        {/* Grid adjusted for 4 items */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {socialLinks.map((social) => (
             <a
               key={social.id}
@@ -73,7 +79,7 @@ export function Contact() {
                   </p>
                   <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
                     <span className={`text-xs font-medium px-3 py-1 rounded-full bg-gradient-to-r ${social.color} text-white`}>
-                      Visitar perfil →
+                      {social.name === 'Email' ? 'Enviar correo →' : 'Visitar perfil →'}
                     </span>
                   </div>
                 </CardContent>
@@ -81,47 +87,6 @@ export function Contact() {
             </a>
           ))}
         </div>
-        
-        {/* Contact Form */}
-        <Card className="max-w-2xl mx-auto">
-          <CardContent className="p-6 md:p-8">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="p-2 rounded-lg bg-blue-100 dark:bg-blue-900/30">
-                <Mail className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-              </div>
-              <h3 className="text-xl font-semibold">Envíame un mensaje</h3>
-            </div>
-            
-            <form className="space-y-4">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Nombre</Label>
-                  <Input id="name" placeholder="Tu nombre" />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="tu@email.com" />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="subject">Asunto</Label>
-                <Input id="subject" placeholder="¿De qué trata tu mensaje?" />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="message">Mensaje</Label>
-                <Textarea 
-                  id="message" 
-                  placeholder="Escribe tu mensaje aquí..."
-                  rows={5}
-                />
-              </div>
-              <Button type="submit" className="w-full gap-2" size="lg">
-                <Send className="w-4 h-4" />
-                Enviar mensaje
-              </Button>
-            </form>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );
