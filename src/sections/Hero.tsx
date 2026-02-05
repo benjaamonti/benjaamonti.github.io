@@ -12,7 +12,7 @@ export function Hero() {
         <div className="flex flex-col items-center gap-6">
           {/* Avatar */}
           <Avatar className="w-32 h-32 border-4 border-white dark:border-slate-700 shadow-xl">
-            <AvatarImage src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="Profile" />
+            <AvatarImage src="https://avatars.githubusercontent.com/u/150205790" alt="Profile Picture" />
             <AvatarFallback className="text-3xl bg-gradient-to-br from-blue-500 to-indigo-600 text-white">
               TU
             </AvatarFallback>
@@ -24,7 +24,7 @@ export function Hero() {
               <span className="gradient-text">Benjamin Monti</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground font-medium">
-              Desarrollador Web Full Stack
+              Estudiante Universitario Avanzado
             </p>
           </div>
           
@@ -32,23 +32,20 @@ export function Hero() {
           <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
             <div className="flex items-center gap-1.5">
               <MapPin className="w-4 h-4" />
-              <span>Tu Ciudad, País</span>
+              <span>Tandil,Buenos Aires, Argentina</span>
             </div>
             <div className="flex items-center gap-1.5">
               <Mail className="w-4 h-4" />
-              <span>tu.email@ejemplo.com</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <Phone className="w-4 h-4" />
-              <span>+34 123 456 789</span>
+              <span>benjamonti@protonmail.com</span>
             </div>
           </div>
           
           {/* Description */}
           <p className="max-w-2xl text-lg text-muted-foreground leading-relaxed">
-            Apasionado desarrollador web con experiencia en crear aplicaciones modernas y escalables. 
-            Especializado en React, TypeScript y Node.js. Siempre en busca de nuevos desafíos y 
-            oportunidades para aprender y crecer profesionalmente.
+            Ingeniero de software en formación continua, con capacidad para transitar desde el diseño de arquitectura (UML) hasta la implementación de bajo nivel en C++. 
+            Entiendo el flujo de datos desde los flip-flops y la división de frecuencias hasta las funciones de ventana en SQL. 
+            Mi perfil es para equipos que necesitan a alguien que comprenda cómo se mueve cada bit y no tenga miedo de auditar permisos, 
+            corregir sintaxis de otros o rediseñar una arquitectura desde cero para que sea escalablema.
           </p>
           
           {/* CTA Buttons */}
