@@ -1,9 +1,9 @@
-import { Instagram, Linkedin, GitHub, Heart } from 'lucide-react';
+import {Mail, Linkedin, GitHub} from 'lucide-react';
 
 const socialLinks = [
-  { name: 'Instagram', icon: Instagram, url: 'https://instagram.com/benjaa.monti' },
+  { name: 'Mail', icon: Mail, url: 'mailto:benjamonti@protonmail.com' },
   { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com/in/benja-monti-177848220' },
-  { name: 'WhatsApp', icon: GitHub, url: 'https://github.com/benjaamonti' },
+  { name: 'GitHub', icon: GitHub, url: 'https://github.com/benjaamonti' },
 ];
 
 export function Footer() {
