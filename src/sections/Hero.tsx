@@ -32,14 +32,14 @@ export function Hero() {
           <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
             <div className="flex items-center gap-1.5">
               <MapPin className="w-4 h-4" />
-              <span>Tandil,Buenos Aires, Argentina</span>
+              <span>Tandil, Buenos Aires, Argentina</span>
             </div>
             <div className="flex items-center gap-1.5">
               <Mail className="w-4 h-4" />
               <span>benjamonti@protonmail.com</span>
             </div>
           </div>
-          
+                    
           {/* Description */}
           <p className="max-w-2xl text-lg text-muted-foreground leading-relaxed">
             Ingeniero de software en formación continua, con capacidad para transitar desde el diseño de arquitectura (UML) hasta la implementación de bajo nivel en C++. 
