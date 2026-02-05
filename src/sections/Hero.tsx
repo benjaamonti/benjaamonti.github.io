@@ -50,9 +50,11 @@ export function Hero() {
           
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4">
-            <Button className="gap-2" size="lg">
-              <Download className="w-4 h-4" />
-              Descargar CV
+           <Button className="gap-2" size="lg" asChild>
+              <a href="/src/media/curriculum.pdf" download="Monti_Benjamin_CV.pdf">
+                <Download className="w-4 h-4" />
+                Descargar CV
+              </a>
             </Button>
             <Button variant="outline" size="lg" asChild>
               <a href="#contacto">Contactar</a>
