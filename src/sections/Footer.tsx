@@ -2,8 +2,8 @@ import {Mail, Linkedin, GitHub} from 'lucide-react';
 
 const socialLinks = [
   { name: 'Mail', icon: Mail, url: 'mailto:benjamonti@protonmail.com' },
-  { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com/in/benja-monti-177848220' },
   { name: 'GitHub', icon: GitHub, url: 'https://github.com/benjaamonti' },
+  { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com/in/benja-monti-177848220' },
 ];
 
 export function Footer() {
