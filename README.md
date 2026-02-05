@@ -2,7 +2,7 @@
 
 Web personal con currículum vitae y sección de contacto, construida con React, TypeScript y Tailwind CSS.
 
-![Vista previa](./preview.png)
+![Pagina Web](benjamonti.me)
 
 ## 🚀 Características
 
