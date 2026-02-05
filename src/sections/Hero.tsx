@@ -1,6 +1,8 @@
 import { MapPin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import cvFile from '../media/cv.pdf';
+import profilePicture from '../media/profile.png';
 
 export function Hero() {
   return (
@@ -12,7 +14,7 @@ export function Hero() {
         <div className="flex flex-col items-center gap-6">
           {/* Avatar */}
           <Avatar className="w-32 h-32 border-4 border-white dark:border-slate-700 shadow-xl">
-            <AvatarImage src="https://avatars.githubusercontent.com/u/150205790" alt="Profile Picture" />
+            <AvatarImage src={profilePicture} />
             <AvatarFallback className="text-3xl bg-gradient-to-br from-blue-500 to-indigo-600 text-white">
               TU
             </AvatarFallback>
@@ -51,7 +53,7 @@ export function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4">
            <Button className="gap-2" size="lg" asChild>
-              <a href="/src/media/curriculum.pdf" download="Monti_Benjamin_CV.pdf">
+              <a href={cvFile} download="Monti_Benjamin_CV.pdf">
                 <Download className="w-4 h-4" />
                 Descargar CV
               </a>
