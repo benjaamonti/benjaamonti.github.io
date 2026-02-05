@@ -4,19 +4,19 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card';
 const education = [
   {
     id: 1,
-    degree: 'Máster en Ingeniería de Software',
-    school: 'Universidad Politécnica',
-    location: 'Madrid, España',
-    period: '2017 - 2018',
-    description: 'Especialización en arquitectura de software y desarrollo de aplicaciones empresariales.',
+    degree: 'Ingeniería de Sistemas',
+    school: 'Universidad Nacional del Centro de la Provincia de Buenos Aires',
+    location: 'Tandil, Buenos Aires',
+    period: '2023 - Actualidad',
+    description: 'Ciencias Básicas de la Ingeniería, Tecnologías Básicas, Tecnologías Aplicadas, Ciencias y Tecnologías Complementarias.',
   },
   {
     id: 2,
-    degree: 'Grado en Ingeniería Informática',
-    school: 'Universidad de Valencia',
-    location: 'Valencia, España',
-    period: '2013 - 2017',
-    description: 'Formación integral en programación, bases de datos, redes y sistemas operativos.',
+    degree: 'Educación Secundaria',
+    school: 'Instituto Juan Gutenberg',
+    location: 'Mar del Plata, Buenos Aires',
+    period: '2017 - 2022',
+    description: 'Especialización en Ciencias Naturales.',
   },
 ];
 
