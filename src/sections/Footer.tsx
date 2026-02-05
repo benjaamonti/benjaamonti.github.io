@@ -1,9 +1,9 @@
-import { Instagram, Linkedin, MessageCircle, Heart } from 'lucide-react';
+import { Instagram, Linkedin, GitHub, Heart } from 'lucide-react';
 
 const socialLinks = [
-  { name: 'Instagram', icon: Instagram, url: 'https://instagram.com/tu_usuario' },
-  { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com/in/tu-perfil' },
-  { name: 'WhatsApp', icon: MessageCircle, url: 'https://wa.me/34123456789' },
+  { name: 'Instagram', icon: Instagram, url: 'https://instagram.com/benjaa.monti' },
+  { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com/in/benja-monti-177848220' },
+  { name: 'WhatsApp', icon: GitHub, url: 'https://github.com/benjaamonti' },
 ];
 
 export function Footer() {
@@ -15,9 +15,9 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
           <div className="flex items-center gap-1 text-sm text-muted-foreground">
-            <span>© {currentYear} Tu Nombre.</span>
+            <span>© {currentYear} Monti Benjamin.</span>
             <span className="flex items-center gap-1">
-              Hecho con <Heart className="w-4 h-4 text-red-500 fill-red-500" /> en React
+              Hecho en React.
             </span>
           </div>
 
