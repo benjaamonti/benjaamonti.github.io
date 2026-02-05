@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone, Download } from 'lucide-react';
+import { MapPin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
