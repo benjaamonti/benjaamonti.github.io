@@ -15,9 +15,9 @@ const socialLinks = [
   {
     id: 2,
     name: 'GitHub',
-    username: 'benjaa-monti',
+    username: 'benjaamonti',
     icon: Github,
-    url: 'https://github.com/benjaa-monti',
+    url: 'https://github.com/benjaamonti',
     color: 'from-slate-700 to-slate-900',
     bgColor: 'bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900/30 dark:to-slate-800/30',
     iconColor: 'text-slate-700 dark:text-slate-400',
