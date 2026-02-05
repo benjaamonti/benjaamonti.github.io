@@ -1,16 +1,16 @@
-import { Instagram, Linkedin, Github, Mail } from 'lucide-react';
+import {Linkedin, Github, Mail } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const socialLinks = [
   {
     id: 1,
-    name: 'Instagram',
-    username: '@benjaa.monti',
-    icon: Instagram,
-    url: 'https://instagram.com/benjaa.monti',
-    color: 'from-purple-500 via-pink-500 to-orange-400',
-    bgColor: 'bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30',
-    iconColor: 'text-pink-600 dark:text-pink-400',
+    name: 'Email',
+    username: 'benjamonti@protonmail.com',
+    icon: Mail,
+    url: 'mailto:benjamonti@protonmail.com',
+    color: 'from-violet-600 to-indigo-600', 
+    bgColor: 'bg-gradient-to-br from-violet-50 to-indigo-50 dark:from-violet-950/30 dark:to-indigo-950/30',
+    iconColor: 'text-violet-600 dark:text-violet-400',
   },
   {
     id: 2,
@@ -32,16 +32,6 @@ const socialLinks = [
     bgColor: 'bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30',
     iconColor: 'text-blue-600 dark:text-blue-400',
   },
-  {
-    id: 4,
-    name: 'Email',
-    username: 'benjamonti@protonmail.com',
-    icon: Mail,
-    url: 'mailto:benjamonti@protonmail.com',
-    color: 'from-violet-600 to-indigo-600', 
-    bgColor: 'bg-gradient-to-br from-violet-50 to-indigo-50 dark:from-violet-950/30 dark:to-indigo-950/30',
-    iconColor: 'text-violet-600 dark:text-violet-400',
-  },
 ];
 
 export function Contact() {
@@ -59,7 +49,7 @@ export function Contact() {
         </div>
         
         {/* Grid adjusted for 4 items */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {socialLinks.map((social) => (
             <a
               key={social.id}
