@@ -1,9 +1,10 @@
-import {Mail, Linkedin, Github} from 'lucide-react';
+import {Mail, Linkedin, Github, Coins} from 'lucide-react';
 
 const socialLinks = [
   { name: 'Mail', icon: Mail, url: 'mailto:benjamonti@protonmail.com' },
   { name: 'Github', icon: Github, url: 'https://github.com/benjaamonti' },
   { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com/in/benja-monti-177848220' },
+  { name: 'Coins', icon: Coins, url: 'https://benjamonti.me/Insert-Coin/' },
 ];
 
 export function Footer() {
